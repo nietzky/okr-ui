@@ -1,0 +1,134 @@
+/* 
+.accordion{
+    width: 1500px;
+ } */
+.card-header{
+    border-bottom: 0px;
+}
+
+.card{
+    border: 0px;
+}
+
+.card-body{
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+    margin: 0 0 0 4%;
+    
+}
+
+.input-add{
+    transition: 0.1s linear;
+    transform: translateX(-1.5rem);
+    width: 0px;
+    z-index: -999;
+    visibility: hidden;
+}
+
+.input-add-visible{
+    transform: translateX(1rem);
+    animation: animacaoBolada 0.8s;
+    visibility: visible;
+    animation-fill-mode: forwards;
+}
+
+.btn-add-kr{
+    transform: translateX(1rem);
+    visibility: hidden;
+}
+
+.btn-add-kr{
+    transform: translateX(1rem);
+    visibility: hidden;
+}
+
+ @keyframes animacaoBolada  {
+    0%   { 
+        width: 0px;
+     }
+    
+     100% { 
+        width: 200px;
+     }
+ } 
+
+ .heart {
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    background-image:url( 'https://abs.twimg.com/a/1446542199/img/t1/web_heart_animation.png');
+    background-position: left;
+    background-repeat:no-repeat;
+    background-size:2900%;
+  }
+  
+  .heart:hover {
+    background-position:right;
+  }
+  
+  .is_animating {
+    animation: heart-burst .8s steps(28) 1;
+  }
+  
+  @keyframes heart-burst {
+    from {background-position:left;}
+    to { background-position:right;}
+  }
+  .progress{ max-height: 1em; width:120px;}
+  .progress-bar{ width: 25%;}
+  .progress-right {
+    float: right;
+    /*margin-right:50px;*/
+    padding-right:10px;
+  }
+  .div-2 {
+    
+    /*margin-left:350px;*/
+    font-size:x-small;
+    padding-left:250px;
+   
+  }
+
+  .inputbox-right {
+    float: right;
+    /*margin-right:50px;*/
+    padding-right:0px;
+  }
+
+
+  .col-right {
+    float: right;
+    /*margin-right:50px;*/
+   
+  }
+
+  .first, .second, .third, .fourth {
+    float: left;
+    /*width: 25%;*/
+    /* color: white; */
+    padding: 7px;
+    height: 33px;
+    text-align: center;
+ }
+ .first {
+    /* background-color: tomato; */
+    width: 60%;
+    text-align: left;
+ }
+ .second {
+    /* background-color: teal; */
+    width: 12%;
+    text-align: left;
+ }
+ .third {
+    /* background-color: rgb(166, 71, 255); */
+    width: 15%;
+ }
+ .fourth {
+    /* background-color: rgb(255, 71, 194); */
+    width: 13%;
+ }
+ .container:after {
+    clear: both;
+ }
+
+
